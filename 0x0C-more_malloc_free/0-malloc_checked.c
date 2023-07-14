@@ -13,6 +13,9 @@ void *malloc_checked(unsigned int b)
 	allocate = malloc(b);
 
 	if (allocate == NULL)
+	{
 		(exit(98);
+
+	}
 	return (allocate);
 }
