@@ -2,21 +2,19 @@
 #define DOG_H
 
 /**
- * struct dog: dog info
- * @name: character type
- * @age: float type
- * @owner: charcater type
+ * struct dog - struct with dog info
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
  *
- *
- * Status: this stores different data types
+ * Description: store different data types
  */
-
 typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog_t
+} dog_t;
 
 void init_dog(struct dog *d, char *name, float  age, char *owner);
 void print_dog(struct dog *d);
