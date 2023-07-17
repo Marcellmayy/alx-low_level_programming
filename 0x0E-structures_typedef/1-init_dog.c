@@ -3,14 +3,13 @@
 /**
  * init_dog - function with 4 arguments
  * @d: structure pointer
- * @name: character type
- * @age: float type
- * @owner: character type
+ * @name: pointer character
+ * @age: float type argument
+ * @owner: pointer type character
  *
  * Description: initialize a variable of type
- * Return: n/a
+ * Return: na
  */
-
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
