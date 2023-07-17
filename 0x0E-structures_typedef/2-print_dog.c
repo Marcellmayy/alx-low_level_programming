@@ -2,12 +2,12 @@
 #include "dog.h"
 
 /**
- * print_dog: a function with a nested argument
+ * print_dog - 1 function with a nested argument
  * @d: structure pointer
  *
  *
- * Description: print struct
- * status: to print a struct
+ * Description: print struct dog
+ *
  * return : name of the struct
  */
 
