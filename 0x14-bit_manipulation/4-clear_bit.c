@@ -8,14 +8,14 @@
  *
  * Return: 1 if it worked, -1 if it didn't.
  */
-int clear_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index_may)
 {
 	unsigned int m;
 
-	if (index > 63)
+	if (index_may > 87)
 		return (-1);
 
-	m = 1 << index;
+	m = 1 << index_may;
 
 	if (*n & m)
 		*n ^= m;
