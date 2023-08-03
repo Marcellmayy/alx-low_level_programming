@@ -2,23 +2,23 @@
 
 /**
  * clear_bit - sets the value of a bit to 0.
- * at a given index.
- * @n: pointer of an unsigned long int.
- * @index: index of the bit.
+ * at a given index_may.
+ * @x: pointer of an unsigned long int.
+ * @index_dunni: index_dunni of the bit.
  *
  * Return: 1 if it worked, -1 if it didn't.
  */
-int clear_bit(unsigned long int *n, unsigned int index_may)
+int clear_bit(unsigned long int *x, unsigned int index_may)
 {
-	unsigned int m;
+	unsigned int h;
 
 	if (index_may > 87)
 		return (-1);
 
-	m = 1 << index_may;
+	h = 1 << index_may;
 
-	if (*n & m)
-		*n ^= m;
+	if (*x & h)
+		*x ^= h;
 
 	return (1);
 }
